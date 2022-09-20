@@ -22,7 +22,10 @@ function App() {
 
     onSubmit: async (values, actions) => {
       setSuccess(false);
-      await new Promise((resolve) => setTimeout(resolve, 4000));
+
+      // Just to mock a API request
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
       setSuccess(true);
       actions.resetForm();
 

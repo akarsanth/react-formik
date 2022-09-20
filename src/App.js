@@ -180,8 +180,7 @@ function App() {
           Register
         </button>
 
-        {/* {success && <p className="success">User Registered Successfully!</p>} */}
-        <p className="success">User Registered Successfully!</p>
+        {success && <p className="success">User Registered Successfully!</p>}
       </form>
     </div>
   );

@@ -25,6 +25,9 @@ function App() {
       await new Promise((resolve) => setTimeout(resolve, 4000));
       setSuccess(true);
       actions.resetForm();
+
+      // manually unchecking the TOS Checkbox
+      document.getElementById("tosAccepted").checked = false;
     },
   });
 
@@ -40,6 +43,7 @@ function App() {
 
   console.log(formik);
 
+  // render
   return (
     <div className="form-box">
       <h2>Sign Up!</h2>
